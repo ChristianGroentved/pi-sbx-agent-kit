@@ -1,0 +1,24 @@
+{
+  "providers": {
+    "gcp-oss-maas": {
+      "baseUrl": "https://aiplatform.googleapis.com/v1/projects/YOUR_PROJECT_ID/locations/global/endpoints/openapi",
+      "api": "openai-completions",
+      "apiKey": "!gcloud auth application-default print-access-token",
+      "authHeader": true,
+      "models": [
+        {
+          "id": "qwen/qwen3-next-80b-a3b-thinking-maas",
+          "displayName": "Qwen 3 Next 80B Thinking (Vertex MaaS)"
+        },
+        {
+          "id": "zai-org/glm-5.2-maas",
+          "displayName": "GLM 5.2 (Vertex MaaS)"
+        },
+        {
+          "id": "zai-org/glm-5-maas",
+          "displayName": "GLM 5 (Vertex MaaS)"
+        }
+      ]
+    }
+  }
+}
